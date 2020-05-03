@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 't(i5qq3fu3r6i^-%@!w8z!tv2(qx@yhl&!u8#)-_%&*i4x=sw@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mittadileep.pythonanywhere.com']
 
 
 # Application definition
@@ -119,8 +119,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-# STATIC_ROOT = ''
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # STATICFILES_DIRS = ( os.path.join('static'), )
 
 MEDIA_URL = '/media/'
